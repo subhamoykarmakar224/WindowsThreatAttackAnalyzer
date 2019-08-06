@@ -1,0 +1,290 @@
+{ "_id" : 8261, "ProviderName" : "Microsoft-Windows-Security-Auditing", "Bookmark" : "System.Diagnostics.Eventing.Reader.EventBookmark", "MatchedQueryIds" : "System.UInt32[]", "ProviderId" : "54849625-5478-4994-a5ba-3e3b0328c30d", "Version" : 0, "LevelDisplayName" : "Information", "KeywordsDisplayNames" : "System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]", "Store" : "win-acc-1", "ProcessId" : 4, "MachineName" : "DESKTOP-8O0G16U", "UserId" : NaN, "RelatedActivityId" : NaN, "ThreadId" : 5780, "LogName" : "Security", "Properties" : "System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]", "Task" : 12804, "OpcodeDisplayName" : "Info", "Level" : 0, "RecordId" : 91273, "TaskDisplayName" : "Other Object Access Events", "ActivityId" : NaN, "Opcode" : 0, "ContainerLog" : "c:\\users\\user\\downloads\\fwdeventscase1\\case_1.evtx", "TimeCreated" : ISODate("2019-06-26T21:47:42Z"), "Id" : 4658, "Keywords" : NumberLong("-9214364837600034816"), "Message" : "The handle to an object was closed.\r\n\r\nSubject :\r\n\tSecurity ID:\t\tS-1-5-21-3497878331-16137086-3393786485-1001\r\n\tAccount Name:\t\tDr. Chinmoy Karmakar\r\n\tAccount Domain:\t\tDESKTOP-8O0G16U\r\n\tLogon ID:\t\t0xF195DD\r\n\r\nObject:\r\n\tObject Server:\t\tSecurity Account Manager\r\n\tHandle ID:\t\t0x382c027b10\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x2d0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\lsass.exe", "Qualifiers" : NaN }
+
+
+{ "_id" : 8280, "ProviderName" : "Microsoft-Windows-Security-Auditing", "Bookmark" : "System.Diagnostics.Eventing.Reader.EventBookmark", "MatchedQueryIds" : "System.UInt32[]", "ProviderId" : "54849625-5478-4994-a5ba-3e3b0328c30d", "Version" : 1, "LevelDisplayName" : "Information", "KeywordsDisplayNames" : "System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]", "Store" : "win-acc-1", "ProcessId" : 4, "MachineName" : "DESKTOP-8O0G16U", "UserId" : NaN, "RelatedActivityId" : NaN, "ThreadId" : 5780, "LogName" : "Security", "Properties" : "System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]", "Task" : 12803, "OpcodeDisplayName" : "Info", "Level" : 0, "RecordId" : 91254, "TaskDisplayName" : "SAM", "ActivityId" : NaN, "Opcode" : 0, "ContainerLog" : "c:\\users\\user\\downloads\\fwdeventscase1\\case_1.evtx", "TimeCreated" : ISODate("2019-06-26T21:47:42Z"), "Id" : 4656, "Keywords" : NumberLong("-9214364837600034816"), "Message" : "A handle to an object was requested.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-21-3497878331-16137086-3393786485-1001\r\n\tAccount Name:\t\tDr. Chinmoy Karmakar\r\n\tAccount Domain:\t\tDESKTOP-8O0G16U\r\n\tLogon ID:\t\t0xF195DD\r\n\r\nObject:\r\n\tObject Server:\t\tSecurity Account Manager\r\n\tObject Type:\t\tSAM_USER\r\n\tObject Name:\t\tDOMAINS\\Account\\Users\\000003EB\r\n\tHandle ID:\t\t0x382c027190\r\n\tResource Attributes:\t-\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x2d0\r\n\tProcess Name:\t\tC:\\Windows????tem32\\lsass.exe\r\n\r\nAccess Request Information:\r\n\tTransaction ID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\tAccesses:\t\tDELETE\r\n\t\t\t\tREAD_CONTROL\r\n\t\t\t\tWRITE_DAC\r\n\t\t\t\tWRITE_OWNER\r\n\t\t\t\tReadGeneralInformation\r\n\t\t\t\tReadPreferences\r\n\t\t\t\tWritePreferences\r\n\t\t\t\tReadLogon\r\n\t\t\t\tReadAccount\r\n\t\t\t\tWriteAccount\r\n\t\t\t\tChangePassword (with knowledge of old password)\r\n\t\t\t\tSetPassword (without knowledge of old password)\r\n\t\t\t\tListGroups\r\n\t\t\t\tReadGroupMembership\r\n\t\t\t\tChangeGroupMembership\r\n\t\t\t\t\r\n\tAccess Reasons:\t\t-\r\n\tAccess Mask:\t\t0xF07FF\r\n\tPrivileges Used for Access Check:\t-\r\n\tRestricted SID Count:\t0", "Qualifiers" : NaN }
+
+ProviderName
+Bookmark
+MatchedQueryIds
+ProviderId
+Version
+LevelDisplayName
+KeywordsDisplayNames
+Store
+ProcessId
+MachineName
+UserId
+RelatedActivityId
+ThreadId
+LogName
+Properties
+Task
+OpcodeDisplayName
+Level
+RecordId
+ActivityId
+Opcode
+ContainerLog
+TimeCreated
+Id
+Keywords
+Message
+_id
+TaskDisplayName
+Qualifiers
+
+---------------------------------------------------------------------------------
+
+2019-06-26 21:06:55
+An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-8O0G16U$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x14E6553
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x1fc
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-8O0G16U
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.
+
+----------------------------------------------------------------------------------------
+
+
+['0x14DE10F', '0x14DDE15', '0x14E6553', '0x3E7', '0x1514F1B', '0x1514EFD', '0x15FC218', '0x15FC1F8', '0x16DFFB6', '0x16DFF94', '0x1719ABB', '0x1719A9F', '0x171D5B1', '0x171D591', '0x18A5056', '0x18A5025', '0x18ABAD9', '0x18ABABC']
+
+
+logon 2019-06-26T21:06:55Z
+logoff 2019-06-26T21:41:07Z
+
+
+{ "_id" : 10785, "ProviderName" : "Microsoft-Windows-Security-Auditing", "Bookmark" : "System.Diagnostics.Eventing.Reader.EventBookmark", "MatchedQueryIds" : "System.UInt32[]", "ProviderId" : "54849625-5478-4994-a5ba-3e3b0328c30d", "Version" : 0, "LevelDisplayName" : "Information", "KeywordsDisplayNames" : "System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]", "Store" : "win-acc-1", "ProcessId" : 720, "MachineName" : "DESKTOP-8O0G16U", "UserId" : NaN, "RelatedActivityId" : NaN, "ThreadId" : 1056, "LogName" : "Security", "Properties" : "System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]", "Task" : 12545, "OpcodeDisplayName" : "Info", "Level" : 0, "RecordId" : 88749, "TaskDisplayName" : "Logoff", "ActivityId" : "07066c20-1a99-0001-266c-0607991ad501", "Opcode" : 0, "ContainerLog" : "c:\\users\\user\\downloads\\fwdeventscase1\\case_1.evtx", "TimeCreated" : ISODate("2019-06-26T21:41:07Z"), "Id" : 4647, "Keywords" : NumberLong("-9214364837600034816"), "Message" : "User initiated logoff:\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-21-3497878331-16137086-3393786485-1003\r\n\tAccount Name:\t\tSubhamoy\r\n\tAccount Domain:\t\tDESKTOP-8O0G16U\r\n\tLogon ID:\t\t0x14E6553\r\n\r\nThis event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event.", "Qualifiers" : NaN }
+
+{ "_id" : 14419, "ProviderName" : "Microsoft-Windows-Security-Auditing", "Bookmark" : "System.Diagnostics.Eventing.Reader.EventBookmark", "MatchedQueryIds" : "System.UInt32[]", "ProviderId" : "54849625-5478-4994-a5ba-3e3b0328c30d", "Version" : 2, "LevelDisplayName" : "Information", "KeywordsDisplayNames" : "System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]", "Store" : "win-acc-1", "ProcessId" : 720, "MachineName" : "DESKTOP-8O0G16U", "UserId" : NaN, "RelatedActivityId" : NaN, "ThreadId" : 8844, "LogName" : "Security", "Properties" : "System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]", "Task" : 12544, "OpcodeDisplayName" : "Info", "Level" : 0, "RecordId" : 85115, "TaskDisplayName" : "Logon", "ActivityId" : "07066c20-1a99-0001-266c-0607991ad501", "Opcode" : 0, "ContainerLog" : "c:\\users\\user\\downloads\\fwdeventscase1\\case_1.evtx", "TimeCreated" : ISODate("2019-06-26T21:06:55Z"), "Id" : 4624, "Keywords" : NumberLong("-9214364837600034816"), "Message" : "An account was successfully logged on.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tDESKTOP-8O0G16U$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3E7\r\n\r\nLogon Information:\r\n\tLogon Type:\t\t2\r\n\tRestricted Admin Mode:\t-\r\n\tVirtual Account:\t\tNo\r\n\tElevated Token:\t\tNo\r\n\r\nImpersonation Level:\t\tImpersonation\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\tS-1-5-21-3497878331-16137086-3393786485-1003\r\n\tAccount Name:\t\tSubhamoy\r\n\tAccount Domain:\t\tDESKTOP-8O0G16U\r\n\tLogon ID:\t\t0x14E6553\r\n\tLinked Logon ID:\t\t0x0\r\n\tNetwork Account Name:\t-\r\n\tNetwork Account Domain:\t-\r\n\tLogon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x1fc\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n\r\nNetwork Information:\r\n\tWorkstation Name:\tDESKTOP-8O0G16U\r\n\tSource Network Address:\t127.0.0.1\r\n\tSource Port:\t\t0\r\n\r\nDetailed Authentication Information:\r\n\tLogon Process:\t\tUser32 \r\n\tAuthentication Package:\tNegotiate\r\n\tTransited Services:\t-\r\n\tPackage Name (NTLM only):\t-\r\n\tKey Length:\t\t0\r\n\r\nThis event is generated when a logon session is created. It is generated on the computer that was accessed.\r\n\r\nThe subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.\r\n\r\nThe logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).\r\n\r\nThe New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.\r\n\r\nThe network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.\r\n\r\nThe impersonation level field indicates the extent to which a process in the logon session can impersonate.\r\n\r\nThe authentication information fields provide detailed information about this specific logon request.\r\n\t- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.\r\n\t- Transited services indicate which intermediate services have participated in this logon request.\r\n\t- Package name indicates which sub-protocol was used among the NTLM protocols.\r\n\t- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.", "Qualifiers" : NaN }
+
+
+
+{ "_id" : ObjectId("5d14bff929c5253ff09ee3f4"), "ProviderName" : "Microsoft-Windows-Security-Auditing", "Bookmark" : "System.Diagnostics.Eventing.Reader.EventBookmark", "MatchedQueryIds" : "System.UInt32[]", "ProviderId" : "54849625-5478-4994-a5ba-3e3b0328c30d", "Version" : 2, "LevelDisplayName" : "Information", "KeywordsDisplayNames" : "System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]", "Store" : "win-acc-1", "ProcessId" : 720, "attack_status" : 0, "MachineName" : "DESKTOP-8O0G16U", "UserId" : NaN, "RelatedActivityId" : NaN, "ThreadId" : 8844, "LogName" : "Security", "Properties" : "System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]", "report_Id" : "win-acc-1-2019-06-27 18:39:13.484116-0x14E6553", "Task" : 12544, "OpcodeDisplayName" : "Info", "Level" : 0, "RecordId" : 85115, "TaskDisplayName" : "Logon", "ActivityId" : "07066c20-1a99-0001-266c-0607991ad501", "Opcode" : 0, "ContainerLog" : "c:\\users\\user\\downloads\\fwdeventscase1\\case_1.evtx", "TimeCreated" : ISODate("2019-06-26T21:06:55Z"), "log_id" : 14419, "Id" : 4624, "Keywords" : NumberLong("-9214364837600034816"), "Message" : "An account was successfully logged on.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tDESKTOP-8O0G16U$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3E7\r\n\r\nLogon Information:\r\n\tLogon Type:\t\t2\r\n\tRestricted Admin Mode:\t-\r\n\tVirtual Account:\t\tNo\r\n\tElevated Token:\t\tNo\r\n\r\nImpersonation Level:\t\tImpersonation\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\tS-1-5-21-3497878331-16137086-3393786485-1003\r\n\tAccount Name:\t\tSubhamoy\r\n\tAccount Domain:\t\tDESKTOP-8O0G16U\r\n\tLogon ID:\t\t0x14E6553\r\n\tLinked Logon ID:\t\t0x0\r\n\tNetwork Account Name:\t-\r\n\tNetwork Account Domain:\t-\r\n\tLogon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x1fc\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n\r\nNetwork Information:\r\n\tWorkstation Name:\tDESKTOP-8O0G16U\r\n\tSource Network Address:\t127.0.0.1\r\n\tSource Port:\t\t0\r\n\r\nDetailed Authentication Information:\r\n\tLogon Process:\t\tUser32 \r\n\tAuthentication Package:\tNegotiate\r\n\tTransited Services:\t-\r\n\tPackage Name (NTLM only):\t-\r\n\tKey Length:\t\t0\r\n\r\nThis event is generated when a logon session is created. It is generated on the computer that was accessed.\r\n\r\nThe subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.\r\n\r\nThe logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).\r\n\r\nThe New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.\r\n\r\nThe network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.\r\n\r\nThe impersonation level field indicates the extent to which a process in the logon session can impersonate.\r\n\r\nThe authentication information fields provide detailed information about this specific logon request.\r\n\t- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.\r\n\t- Transited services indicate which intermediate services have participated in this logon request.\r\n\t- Package name indicates which sub-protocol was used among the NTLM protocols.\r\n\t- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.", "Qualifiers" : NaN }
+
+
+
+
+	NumberLong("-9214364837600034816"),
+	NumberLong("4620693217682128896"),
+	NumberLong("-9218868437227405312")
+
+---------------------------------------------------------------------------------------------
+An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-8O0G16U$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x14E6553
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x1fc
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-8O0G16U
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+-----------------------------------------------------------------------------
+
+
+An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x15FC218
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.
+------------------------------------------------------
+An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-8O0G16U$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x15FC218
+	Linked Logon ID:		0x15FC1F8
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0xf08
+	Process Name:		C:\Windows\System32\consent.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-8O0G16U
+	Source Network Address:	::1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		CredPro
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+
+
+-------------------------------------------------------------------
+
+
+
+A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x14E6553
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\abc_readOnly.txt
+	Handle ID:		0x1c8
+	Resource Attributes:	???
+
+Process Information:
+	Process ID:		0x358003800370033
+	Process Name:		
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Granted by	D:(A;;0x1200a9;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				SYNCHRONIZE:	Granted by	D:(A;;0x1200a9;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadData (or ListDirectory):	Granted by	D:(A;;0x1200a9;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadEA:	Granted by	D:(A;;0x1200????;S-1-5-21-349787??????????
+	Access Mask:		0xBBC90000
+	Privileges Used for Access Check:	
+	Restricted SID Count:	3735552
+
+
+
+
+
+-----------------------------------------------------------------------------
+New Logon:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x15FC218
+	Linked Logon ID:		0x15FC1F8
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+
+# userName = log[i]['Message']
+                    # userName = userName[userName.index('Account Name') + 13:userName.index('\n', userName.index('Account Name'))].strip('\t')
+                    # userName = str(userName).strip('\r')
+                    # adminName = log[i+1]['Message']
+                    # adminName = adminName[adminName.index('Account Name') + 13:adminName.index('\n', adminName.index('Account Name'))].strip('\t')
+                    # adminName = str(adminName).strip('\r')

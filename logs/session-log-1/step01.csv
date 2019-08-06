@@ -1,0 +1,274 @@
+#TYPE System.Diagnostics.Eventing.Reader.EventLogRecord
+"Message","Id","Version","Qualifiers","Level","Task","Opcode","Keywords","RecordId","ProviderName","ProviderId","LogName","ProcessId","ThreadId","MachineName","UserId","TimeCreated","ActivityId","RelatedActivityId","ContainerLog","MatchedQueryIds","Bookmark","LevelDisplayName","OpcodeDisplayName","TaskDisplayName","KeywordsDisplayNames","Properties"
+"An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C4B
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","4634","0",,"0","12545","0","-9214364837600034816","212743","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","10352","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM",,,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Logoff","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The workstation was unlocked.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x785E62D
+	Session ID:	13","4801","0",,"0","12551","0","-9214364837600034816","212742","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","12940","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Other Logon/Logoff Events","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C68
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","4634","0",,"0","12545","0","-9214364837600034816","212741","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM",,,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Logoff","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C4B
+
+Privileges:		SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","4672","0",,"0","12548","0","-9214364837600034816","212740","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Special Logon","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Group membership information.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-0526O8D$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+New Logon:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C68
+
+Event in sequence:		1 of 1
+
+Group Membership:			
+		%{S-1-5-21-1874035555-1170827713-1978778435-513}
+		%{S-1-1-0}
+		%{S-1-5-114}
+		%{S-1-5-32-544}
+		%{S-1-5-32-545}
+		%{S-1-5-4}
+		%{S-1-2-1}
+		%{S-1-5-11}
+		%{S-1-5-15}
+		%{S-1-5-113}
+		%{S-1-2-0}
+		%{S-1-5-64-10}
+		%{S-1-16-8192}
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+This event is generated when the Audit Group Membership subcategory is configured.  The Logon ID field can be used to correlate this event with the corresponding user logon event as well as to any other security audit events generated during this logon session.","4627","0",,"0","12554","0","-9214364837600034816","212739","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Group Membership","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-0526O8D$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C68
+	Linked Logon ID:		0x78B8C4B
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x580
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-0526O8D
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","4624","2",,"0","12544","0","-9214364837600034816","212738","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Logon","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Group membership information.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-0526O8D$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+New Logon:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C4B
+
+Event in sequence:		1 of 1
+
+Group Membership:			
+		%{S-1-5-21-1874035555-1170827713-1978778435-513}
+		%{S-1-1-0}
+		%{S-1-5-114}
+		%{S-1-5-32-544}
+		%{S-1-5-32-545}
+		%{S-1-5-4}
+		%{S-1-2-1}
+		%{S-1-5-11}
+		%{S-1-5-15}
+		%{S-1-5-113}
+		%{S-1-2-0}
+		%{S-1-5-64-10}
+		%{S-1-16-12288}
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+This event is generated when the Audit Group Membership subcategory is configured.  The Logon ID field can be used to correlate this event with the corresponding user logon event as well as to any other security audit events generated during this logon session.","4627","0",,"0","12554","0","-9214364837600034816","212737","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Group Membership","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-0526O8D$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x78B8C4B
+	Linked Logon ID:		0x78B8C68
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x580
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	DESKTOP-0526O8D
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","4624","2",,"0","12544","0","-9214364837600034816","212736","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Logon","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A logon was attempted using explicit credentials.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-0526O8D$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x580
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account?s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command.","4648","0",,"0","12544","0","-9214364837600034816","212735","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","784","6744","DESKTOP-0526O8D",,"8/5/2019 5:02:32 PM","e10bc0fc-45db-0000-45c1-0be1db45d501",,"h:\subhamoy_logs\new\step 01_login-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Logon","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"

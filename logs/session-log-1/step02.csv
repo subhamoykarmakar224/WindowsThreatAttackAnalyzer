@@ -1,0 +1,8 @@
+#TYPE System.Diagnostics.Eventing.Reader.EventLogRecord
+"Message","Id","Version","Qualifiers","Level","Task","Opcode","Keywords","RecordId","ProviderName","ProviderId","LogName","ProcessId","ThreadId","MachineName","UserId","TimeCreated","ActivityId","RelatedActivityId","ContainerLog","MatchedQueryIds","Bookmark","LevelDisplayName","OpcodeDisplayName","TaskDisplayName","KeywordsDisplayNames","Properties"
+"The audit log was cleared.
+Subject:
+	Security ID:	S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:	DEBASHISH
+	Domain Name:	DESKTOP-0526O8D
+	Logon ID:	0x785E60E","1102","0",,"4","104","0","4620693217682128896","214739","Microsoft-Windows-Eventlog","fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148","Security","1488","10276","DESKTOP-0526O8D",,"8/5/2019 5:07:23 PM",,,"h:\subhamoy_logs\new\step 02_logclear-accno_debashish.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Log clear","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
