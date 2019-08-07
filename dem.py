@@ -6,7 +6,7 @@ def windowsLogParse():
     mydb = myclient["logs"]
     mycol = mydb["log_store"]
     cur = mycol.find(
-        {'Store': 'win-acc-1',
+        {'Store': 'home-logs-01',
          # 'Id': {'$in': [4656]},
          # 'TimeCreated': {
              # '$gte': dt.datetime(2019, 06, 26, 21, 6, 55),
@@ -15,8 +15,9 @@ def windowsLogParse():
     }).sort('TimeCreated', 1)
     logs = list(cur)
     for i in range(0, len(logs)-1):
-        if logs[i]['Id'] == '4656' and logs[i+1]['Id'] != '4656':
-            print(logs[i+1]['Id'])
+        if logs[i]['Id'] == 4624:
+            print(logs[i])
+
 
 
 if __name__ == '__main__':

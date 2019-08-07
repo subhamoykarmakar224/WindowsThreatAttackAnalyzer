@@ -4,6 +4,7 @@ import csv
 import pymongo
 import bson
 import datetime as dt
+import dateutil
 #import analyst
 import numpy as np
 
@@ -24,12 +25,13 @@ def windowsLogParse(path, store):
 
     # print(line.iloc[2]['Properties'])
     for i in range(0,len(line)):
-        # try:
-        #     time_sec = dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d-%m-%Y %H:%M").strftime("%s")
-        #     time_mili = int(float(time_sec)*1000)
-        # except:
-        #     time_sec = dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d-%m-%Y %H:%M:%S").strftime("%s")
-        #     time_mili = int(float(time_sec)*1000)
+        # print(dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d-%m-%Y %I:%M:%S"))
+        try:
+            date_time = dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d-%m-%Y %H:%M:%S")
+            # time_mili = int(float(time_sec)*1000)
+        except:
+            date_time = dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d/%m/%Y %I:%M:%S %p")
+            # time_mili = int(float(time_sec)*1000)
         mycol.insert_one({
             '_id' : i+count,
             'Message' : line.iloc[i]['Message'],
@@ -48,7 +50,8 @@ def windowsLogParse(path, store):
             'ThreadId' : line.iloc[i]['ThreadId'],
             'MachineName' : line.iloc[i]['MachineName'],
             'UserId' : line.iloc[i]['UserId'],
-            'TimeCreated' : dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d-%m-%Y %H:%M:%S"),
+            'TimeCreated' : date_time,
+            # 'TimeCreated' : dt.datetime.strptime(line.iloc[i]['TimeCreated'], "%d/%m/%Y %I:%M:%S %p"),
             # 'DateTime':'',
             'ActivityId' : line.iloc[i]['ActivityId'],
             'RelatedActivityId' : line.iloc[i]['RelatedActivityId'],

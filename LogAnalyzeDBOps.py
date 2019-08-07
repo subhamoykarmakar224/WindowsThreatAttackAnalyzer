@@ -31,10 +31,11 @@ def getLogDataUsingQuery(storeName, field, values):
 
 # Checks for complete session status
 def checkCompleteSessionStatus(storeName, sesId):
+    sesIds = sesId[0] + '|' + sesId[1]
     con = MongoClient("mongodb://localhost:27017/")
     db = con["logs"]
     tableLogStore = db["log_store"]
-    data = list(tableLogStore.find({'Store': storeName, 'Id': {'$in': [4624, 4647]}, 'Message': {'$regex': sesId}}).sort('TimeCreated', 1))
+    data = list(tableLogStore.find({'Store': storeName, 'Id': {'$in': [4624, 4647]}, 'Message': {'$regex': sesIds}}).sort('TimeCreated', 1))
     if data[0]['Id'] == 4624 and data[1]['Id'] == 4647:
         return True
     return False
@@ -59,6 +60,7 @@ def getLogsForAnalyze(storeName, sesId, eventIds):
     }).sort('TimeCreated', 1))
 
     return cur
+
 
 def insertReport(log, status, reportId, reportMsg):
     con = MongoClient("mongodb://localhost:27017/")
