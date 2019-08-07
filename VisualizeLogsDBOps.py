@@ -15,6 +15,6 @@ def getFullReport(reportId):
     con = MongoClient("mongodb://localhost:27017/")
     db = con["logs"]
     tableLogStore = db["log_analyze_report"]
-    reports = list(tableLogStore.find({'report_Id': reportId}))
+    reports = list(tableLogStore.find({'report_Id': reportId}).sort('TimeCreated', 1))
     con.close()
     return reports

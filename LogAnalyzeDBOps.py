@@ -102,7 +102,31 @@ def insertReport(log, status, reportId, reportMsg):
     })
     return cur
 
+
+def getKnownLogIds(reportId):
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_analyze_report"]
+    cur = tableLogStore.find({'report_Id': reportId})
+    logIds = []
+    for c in cur:
+        if c['log_id'] not in logIds:
+            logIds.append(c['log_id'])
+
+    return logIds
+
+
 # if __name__ == '__main__':
+#     print(getUnknownLogIds('home-log', getKnownLogIds('home-log_2019-08-07_16:45:59.625541_0x1E6C1F95')))
+
+
+
+
+
+# if __name__ == '__main__':
+#     res = getKnownLogIds('home-log_2019-08-07_16:45:59.625541_0x1E6C1F95')
+#     for r in res:
+#         print(r)
     # l = ['0x14DE10F', '0x14DDE15', '0x14E6553', '0x3E7', '0x1514F1B', '0x1514EFD', '0x15FC218', '0x15FC1F8', '0x16DFFB6', '0x16DFF94', '0x1719ABB', '0x1719A9F', '0x171D5B1', '0x171D591', '0x18A5056', '0x18A5025', '0x18ABAD9', '0x18ABABC']
     # for i in l:
     #     if checkCompleteSessionStatus('win-acc-1', i):

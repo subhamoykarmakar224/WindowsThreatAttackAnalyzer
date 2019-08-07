@@ -92,7 +92,6 @@ class VisualizationLogs(QWidget):
             self.table.clear()
             self.table.setRowCount(0)
 
-
     def loadFilteredReport(self):
         filterLvl = 0
         refreshStatus = False

@@ -12,11 +12,11 @@ def analyzeLogs(storeName):
     reportId = storeName + '_' + str(datetime.datetime.now()).replace(' ', '_') + '_' + str(logonID)
     # reportId = 'r1'
     getPolicyChangeEventStatus(storeName, reportId)
+    getWrongAccountPassword(storeName, reportId)
+    fillInTheUnknowLogs(storeName, reportId)
 
-
-
+# When someone changes audit policy
 def getPolicyChangeEventStatus(storeName, reportId):
-    cnt = 0
     res = db.getLogDataUsingQuery(storeName, 'Id', [4719])
     for i in range(0, len(res)):
         msg = res[i]['Message']
@@ -26,14 +26,48 @@ def getPolicyChangeEventStatus(storeName, reportId):
             accMsg = accMsg[:len(accMsg)-2]
             msg = msg[msg.index('Category'):].replace('\t', '')
             db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.SUSP_POLICY_CHANGE % accMsg) + '\n' + str(msg))
-    print(cnt)
 
 
+# When someone is getting the account password wrong
+def getWrongAccountPassword(storeName, reportId):
+    cnt = 0
+    res = db.getLogDataUsingQuery(storeName, 'Id', [4776, 4625])
+    for i in range(0, len(res)-1):
+        if res[i]['Id'] == 4776 and res[i+1]['Id'] == 4625:
+            cnt += 1
+
+    if cnt > 3:
+        for i in range(0, len(res) - 1):
+            if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625:
+                msg = res[i+1]['Message']
+                msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
+                msg = msg.replace('\t', '').replace('\r', '')
+                db.insertReport(res[i], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+                db.insertReport(res[i+1], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+    else:
+        for i in range(0, len(res) - 1):
+            if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625:
+                msg = res[i+1]['Message']
+                msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
+                msg = msg.replace('\t', '').replace('\r', '')
+                db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+                db.insertReport(res[i+1], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+
+
+# Fill in the other logs in the log store currently not taken into consideration
+def fillInTheUnknowLogs(storeName, reportId):
+    logids = db.getKnownLogIds(reportId)
+    logs = list(db.getLogDate(storeName)) # 241
+    for i in range(0, len(logs)):
+        if logs[i]['_id'] in logids:
+            continue
+        db.insertReport(logs[i], MSG.STATUS_GEN, reportId, 'OK')
 
 
 
 if __name__ == '__main__':
     analyzeLogs('home-log')
+    # fillInTheUnknowLogs('home-log', 'home-log_2019-08-07_16:45:59.625541_0x1E6C1F95')
 
 
 
