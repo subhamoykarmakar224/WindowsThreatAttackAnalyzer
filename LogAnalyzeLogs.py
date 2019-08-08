@@ -13,7 +13,10 @@ def analyzeLogs(storeName):
     # reportId = 'r1'
     getPolicyChangeEventStatus(storeName, reportId)
     getWrongAccountPassword(storeName, reportId)
+    getAddAccountEventStatus(storeName, reportId)
+    getDelAccountEventStatus(storeName, reportId)
     fillInTheUnknowLogs(storeName, reportId)
+
 
 # When someone changes audit policy
 def getPolicyChangeEventStatus(storeName, reportId):
@@ -32,26 +35,98 @@ def getPolicyChangeEventStatus(storeName, reportId):
 def getWrongAccountPassword(storeName, reportId):
     cnt = 0
     res = db.getLogDataUsingQuery(storeName, 'Id', [4776, 4625])
-    for i in range(0, len(res)-1):
+    userName = {}
+    for i in range(0, len(res) - 1):
         if res[i]['Id'] == 4776 and res[i+1]['Id'] == 4625:
-            cnt += 1
+        # if res[i]['Id'] == 4625:
+            # cnt += 1
+            msg = res[i + 1]['Message']
+            msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
+            msg = msg.replace('\t', '').replace('\r', '')
+            msg = msg[msg.index('Account Name:') + len('Account Name:'):msg.index('\n', msg.index('Account Name:'))]
+            if msg not in userName.keys():
+                userName[msg] = 1
+            else:
+                userName[msg] = userName[msg] + 1
+    print(userName)
+    for usr in userName.keys():
+        if userName[usr] > 2:
+            for i in range(0, len(res)):
+                # if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625 and res[i]['Message'].__contains__(usr) and res[i+1]['Message'].__contains__(usr):
+                if res[i]['Message'].__contains__(usr):
+                    if res[i]['Id'] == 4625:
+                        msg = res[i]['Message']
+                        msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
+                        msg = msg.replace('\t', '').replace('\r', '')
+                        db.insertReport(res[i], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+                    else:
+                        db.insertReport(res[i], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(res[i]['Message']))
+        else:
+            i = 0
+            for i in range(0, len(res)):
+                # if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625 and res[i]['Message'].__contains__(usr) and res[i+1]['Message'].__contains__(usr):
+                if res[i]['Message'].__contains__(usr):
+                        if res[i]['Id'] == 4625:
+                            msg = res[i]['Message']
+                            msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
+                            msg = msg.replace('\t', '').replace('\r', '')
+                            db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+                        else:
+                            db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(res[i]['Message']))
 
-    if cnt > 3:
-        for i in range(0, len(res) - 1):
-            if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625:
-                msg = res[i+1]['Message']
-                msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
-                msg = msg.replace('\t', '').replace('\r', '')
-                db.insertReport(res[i], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
-                db.insertReport(res[i+1], MSG.STATUS_THREAT, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
-    else:
-        for i in range(0, len(res) - 1):
-            if res[i]['Id'] == 4776 and res[i + 1]['Id'] == 4625:
-                msg = res[i+1]['Message']
-                msg = msg[msg.index('Account For Which Logon Failed'):msg.index('Failure Information:') - 3]
-                msg = msg.replace('\t', '').replace('\r', '')
-                db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
-                db.insertReport(res[i+1], MSG.STATUS_SUSPICIOUS, reportId, (MSG.THRT_WRONG_PASSWD_LOGIN) + '\n' + str(msg))
+
+# When someone created a new account in a workstation
+def getAddAccountEventStatus(storeName, reportId):
+    res = db.getLogDataUsingQuery(storeName, 'Id', [4793, 4728, 4720, 4722])
+    res = res[::-1]
+    for i in range(0, len(res), 4): # (4793, 4728, 4720, 4722)
+        if res[i]['Id'] == 4793 and res[i+1]['Id'] == 4728 and res[i+2]['Id'] == 4720 and res[i+3]['Id'] == 4722:
+            if res[i]['Message'].__contains__(logonID) and res[i+1]['Message'].__contains__(logonID) and \
+                res[i+2]['Message'].__contains__(logonID) and res[i+3]['Message'].__contains__(logonID):
+                adminAccMsg = res[i]['Message']
+                adminAccName = adminAccMsg[adminAccMsg.index('Account Name:') + len('Account Name:'):adminAccMsg.\
+                    index('\n', adminAccMsg.index('Account Name:'))].replace('\t', '').replace('\r', '')
+                desktopName = adminAccMsg[adminAccMsg.index('Caller Workstation:') + len('Caller Workstation:'):adminAccMsg.\
+                    index('\n', adminAccMsg.index('Caller Workstation:'))].replace('\t', '').replace('\r', '')
+
+                newUserMsg = res[i+2]['Message']
+                newUserName = newUserMsg[newUserMsg.index('New Account'):].replace('\t', '').replace('\r', '')
+                newUserName = newUserName[newUserName.index('Account Name:'):newUserName.index('Attributes')].strip('\n')
+
+                db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId,
+                                (MSG.SUSP_NEW_ACCOUNT_CREATED % (newUserName, adminAccName, desktopName)))
+                db.insertReport(res[i+1], MSG.STATUS_SUSPICIOUS, reportId,
+                                (MSG.SUSP_NEW_ACCOUNT_CREATED % (newUserName, adminAccName, desktopName)))
+                db.insertReport(res[i+2], MSG.STATUS_SUSPICIOUS, reportId,
+                                (MSG.SUSP_NEW_ACCOUNT_CREATED % (newUserName, adminAccName, desktopName)))
+                db.insertReport(res[i+3], MSG.STATUS_SUSPICIOUS, reportId,
+                                (MSG.SUSP_NEW_ACCOUNT_CREATED % (newUserName, adminAccName, desktopName)))
+
+
+# When someone deletes a user account in a workstation
+def getDelAccountEventStatus(storeName, reportId):
+    res = db.getLogDataUsingQuery(storeName, 'Id', [4733, 4729, 4726])
+    res = res[::-1]
+    accntRemoved = {}
+    for i in range(0, len(res)):  # (4733, 4729, 4726)
+        if res[i]['Id'] == 4726:
+            msg = res[i]['Message']
+            msg = msg[msg.index('Target Account:') + len('Target Account:'):msg.index('Additional Information')]
+            msg = msg.replace('\t', '')
+            securityId = msg[msg.index('Security ID:') + len('Security ID:'):msg.index('\n', msg.index('Security ID:'))]
+            securityId = securityId.replace('\r', '')
+            accName = msg[msg.index('Account Name:') + len('Account Name:'):msg.index('\n', msg.index('Account Name:'))]
+            accName = accName.replace('\t', '').replace('\r', '')
+            accntRemoved[accName] = securityId
+
+    for acc in accntRemoved.keys():
+        for i in range(0, len(res)):
+            if res[i]['Message'].__contains__(accntRemoved[acc]) and res[i]['Message'].__contains__(logonID):
+                msg = res[i]['Message']
+                msg = msg[msg.index('Account Name:'):msg.index('Logon ID')].replace('\t', '').replace('\r', '')
+                msg = msg.replace('Account Domain', 'Workstation')
+                db.insertReport(res[i], MSG.STATUS_SUSPICIOUS, reportId, (MSG.SUSP_ACCOUNT_DELETED % (acc, msg)))
+
 
 
 # Fill in the other logs in the log store currently not taken into consideration

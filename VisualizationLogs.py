@@ -121,15 +121,16 @@ class VisualizationLogs(QWidget):
             self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
             reports = db.getFullReport(str(self.comboReportNames.currentText()))
             self.table.setRowCount(len(reports))
+            cnt = 0
             for i in range(0, len(reports)):
                 if str(reports[i]['attack_status']) == str(filterLvl):
                     date_time = str(datetime.datetime.fromtimestamp(float(reports[i]['TimeCreated'])).strftime('%Y-%m-%d %H:%M:%S'))
                     date_time = re.split(' ', date_time)
-                    self.table.setItem(i, 0, QTableWidgetItem(date_time[0]))
-                    self.table.setItem(i, 1, QTableWidgetItem(date_time[1]))
-                    self.table.setItem(i, 2, QTableWidgetItem(str(reports[i]['attack_status'])))
-                    self.table.setItem(i, 3, QTableWidgetItem(reports[i]['report_msg']))
-                    self.table.setItem(i, 4, QTableWidgetItem(reports[i]['Message']))
+                    self.table.setItem(cnt, 0, QTableWidgetItem(date_time[0]))
+                    self.table.setItem(cnt, 1, QTableWidgetItem(date_time[1]))
+                    self.table.setItem(cnt, 2, QTableWidgetItem(str(reports[i]['attack_status'])))
+                    self.table.setItem(cnt, 3, QTableWidgetItem(reports[i]['report_msg']))
+                    self.table.setItem(cnt, 4, QTableWidgetItem(reports[i]['Message']))
 
                     colorObj = Qt.white
                     if reports[i]['attack_status'] == 1: # Suspicious
@@ -139,11 +140,13 @@ class VisualizationLogs(QWidget):
                     elif reports[i]['attack_status'] == 3: # Attack
                         colorObj = Qt.red
 
-                    self.table.item(i, 0).setBackground(colorObj)
-                    self.table.item(i, 1).setBackground(colorObj)
-                    self.table.item(i, 2).setBackground(colorObj)
-                    self.table.item(i, 3).setBackground(colorObj)
-                    self.table.item(i, 4).setBackground(colorObj)
+                    self.table.item(cnt, 0).setBackground(colorObj)
+                    self.table.item(cnt, 1).setBackground(colorObj)
+                    self.table.item(cnt, 2).setBackground(colorObj)
+                    self.table.item(cnt, 3).setBackground(colorObj)
+                    self.table.item(cnt, 4).setBackground(colorObj)
+
+                    cnt += 1
 
 
     def showFullValue(self):

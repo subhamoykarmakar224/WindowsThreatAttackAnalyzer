@@ -1,0 +1,282 @@
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xcf8
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadData (or ListDirectory)
+				
+	Access Mask:		0x1","4663","1",,"0","12800","0","-9214364837600034816","249512","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xcf8
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadAttributes
+				
+	Access Mask:		0x80","4663","1",,"0","12800","0","-9214364837600034816","249511","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xcf8
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Granted by Ownership
+				SYNCHRONIZE:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadData (or ListDirectory):	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadEA:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadAttributes:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				
+	Access Mask:		0x120089
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9214364837600034816","249510","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xb98
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadData (or ListDirectory)
+				
+	Access Mask:		0x1","4663","1",,"0","12800","0","-9214364837600034816","249506","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xb98
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadAttributes
+				
+	Access Mask:		0x80","4663","1",,"0","12800","0","-9214364837600034816","249505","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xb98
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Granted by Ownership
+				SYNCHRONIZE:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadData (or ListDirectory):	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadEA:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadAttributes:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				
+	Access Mask:		0x120089
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9214364837600034816","249504","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:45 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0x5b4
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadData (or ListDirectory)
+				
+	Access Mask:		0x1","4663","1",,"0","12800","0","-9214364837600034816","249490","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","1460","DESKTOP-0526O8D",,"8/5/2019 5:57:43 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"An attempt was made to access an object.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0x5b4
+	Resource Attributes:	S:AI
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Accesses:		ReadAttributes
+				
+	Access Mask:		0x80","4663","1",,"0","12800","0","-9214364837600034816","249489","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","1460","DESKTOP-0526O8D",,"8/5/2019 5:57:43 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0x5b4
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Granted by Ownership
+				SYNCHRONIZE:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadData (or ListDirectory):	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadEA:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadAttributes:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				
+	Access Mask:		0x120089
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9214364837600034816","249488","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","1460","DESKTOP-0526O8D",,"8/5/2019 5:57:43 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-1874035555-1170827713-1978778435-1001
+	Account Name:		DEBASHISH
+	Account Domain:		DESKTOP-0526O8D
+	Logon ID:		0x1E6C1FFB
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		H:\SUBHAMOY\testpython.py
+	Handle ID:		0xc98
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x160c
+	Process Name:		C:\Python27\pythonw.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Granted by Ownership
+				SYNCHRONIZE:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadData (or ListDirectory):	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadEA:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				ReadAttributes:	Granted by	D:(A;;FA;;;S-1-5-21-1874035555-1170827713-1978778435-1001)
+				
+	Access Mask:		0x120089
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9214364837600034816","249484","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","6332","DESKTOP-0526O8D",,"8/5/2019 5:57:43 PM",,,"h:\subhamoy_logs\new\step 11_notgrantedaccessexecutionpython-accno_subhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
