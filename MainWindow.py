@@ -1,4 +1,5 @@
 from PyQt4.QtGui import *
+from PyQt4.QtCore import *
 import Configuration as cfg
 
 import UploadLogs as upload
@@ -6,6 +7,7 @@ import ViewLogs as view
 import AnalyseLogs as analyse
 import VisualizationLogs as visualize
 import ReportLogs as report
+import ForensicsLog as forensics
 
 
 class MainWindowApplication(QMainWindow):
@@ -28,9 +30,10 @@ class MainWindowApplication(QMainWindow):
 
         tabGroup.addTab(upload.UploadLogs(), self.tabsTitle[0])
         tabGroup.addTab(view.ViewLogs(), self.tabsTitle[1])
-        tabGroup.addTab(analyse.AnalyseLogs(), self.tabsTitle[2])
-        tabGroup.addTab(visualize.VisualizationLogs(), self.tabsTitle[3])
-        tabGroup.addTab(report.ReportLogs(), self.tabsTitle[4])
+        # tabGroup.addTab(analyse.AnalyseLogs(), self.tabsTitle[2])
+        tabGroup.addTab(visualize.VisualizationLogs(), self.tabsTitle[2])
+        tabGroup.addTab(report.ReportLogs(), self.tabsTitle[3])
+        tabGroup.addTab(forensics.ForensicsLog(), self.tabsTitle[4])
 
         # Listener
         tabGroup.currentChanged.connect(self.refreshTab)

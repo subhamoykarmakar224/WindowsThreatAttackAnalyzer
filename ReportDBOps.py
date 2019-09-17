@@ -16,11 +16,12 @@ def getReportCounts(reportId):
     db = con["logs"]
     tableLogStore = db["log_analyze_report"]
     genCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 0}).count()
-    threatCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 1}).count()
-    attackCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 2}).count()
+    suspCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 1}).count()
+    threatCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 2}).count()
+    attackCount = tableLogStore.find({'report_Id': reportId, 'attack_status': 3}).count()
 
     con.close()
-    return [genCount, threatCount, attackCount]
+    return [genCount, suspCount, threatCount, attackCount]
 
 # if __name__ == '__main__':
 #     print(getUniqueReports())

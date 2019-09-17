@@ -11,7 +11,7 @@ class UploadLogs(QWidget):
         layout.setAlignment(Qt.AlignTop)
         sublay = QHBoxLayout()
         pltlayout = QHBoxLayout()
-        platform = QLabel('<html><h2>Platform</h2></html>')
+        platform = QLabel('Platform')
         platform.setMinimumWidth(100)
         platform.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         pltlayout.addWidget(platform)
@@ -23,7 +23,7 @@ class UploadLogs(QWidget):
 
 
         ctglayout = QHBoxLayout()
-        category = QLabel('<html><h2>Category</h2></html>')
+        category = QLabel('Category')
         category.setMinimumWidth(100)
         category.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         ctglayout.addWidget(category)
@@ -33,7 +33,7 @@ class UploadLogs(QWidget):
         layout.addLayout(sublay)
 
         storeLayout = QHBoxLayout()
-        lblStoreName = QLabel('<html><h2>Upload ID</h2></html>')
+        lblStoreName = QLabel('Upload ID')
         storeLayout.addWidget(lblStoreName)
         self.lnEdtStoreName = QLineEdit()
         storeLayout.addWidget(self.lnEdtStoreName)

@@ -1,11 +1,12 @@
 
 
 TABS = [
-    ["UploadLogs", "        Upload Logs        "],
-    ["ViewLogs", "        View Logs        "],
-    ["AnalyseLogs", "        Analyse Logs        "],
-    ["VisualizationLogs", "        Visualize Logs        "],
-    ["ReportLogs", "        Report Logs        "]
+    ["UploadLogs", "Upload Logs"],
+    ["ViewLogs", "View Logs"],
+    # ["AnalyseLogs", "Analyse Logs"],
+    ["VisualizationLogs", "Analyse Logs"],
+    ["ReportLogs", "Report Summary"],
+    ["ForensicsLog", "Forensic Report"]
 ]
 
 

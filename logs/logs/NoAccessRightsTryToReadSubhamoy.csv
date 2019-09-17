@@ -1,0 +1,458 @@
+#TYPE System.Diagnostics.Eventing.Reader.EventLogRecord
+"Message","Id","Version","Qualifiers","Level","Task","Opcode","Keywords","RecordId","ProviderName","ProviderId","LogName","ProcessId","ThreadId","MachineName","UserId","TimeCreated","ActivityId","RelatedActivityId","ContainerLog","MatchedQueryIds","Bookmark","LevelDisplayName","OpcodeDisplayName","TaskDisplayName","KeywordsDisplayNames","Properties"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96853","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","8208","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96852","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96851","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","8208","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96850","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	???
+
+Process Information:
+	Process ID:		0x3580009003a0033
+	Process Name:		
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				ReadEA
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadData (or ListDirectory):	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadEA:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331????37086-3393786485??????????
+	Access Mask:		0xBBC60000
+	Privileges Used for Access Check:	
+	Restricted SID Count:	3276800","4656","1",,"0","12800","0","-9218868437227405312","96849","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96848","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96843","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96842","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96841","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x120080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96840","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		READ_CONTROL:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x120080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96839","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FA3884B
+
+Object:
+	Object Server:		Security
+	Object Type:		Process
+	Object Name:		\Device\HarddiskVolume4\Windows\System32\lsass.exe
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x3180
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		Read from process memory
+				Query process information
+				
+	Access Reasons:		-
+	Access Mask:		0x410
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12802","0","-9218868437227405312","96838","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Kernel Object","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96837","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96836","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A handle to an object was requested.
+
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1003
+	Account Name:		Subhamoy
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0x1FB6EFD2
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		G:\task\xyz_norights.txt
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2324
+	Process Name:		C:\Windows\explorer.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		SYNCHRONIZE
+				ReadAttributes
+				
+	Access Reasons:		SYNCHRONIZE:	Denied by	D:(D;;FA;;;S-1-5-21-3497878331-16137086-3393786485-1003)
+				ReadAttributes:	Granted by ACE on parent folder	D:(A;;0x1301bf;;;AU)
+				
+	Access Mask:		0x100080
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0","4656","1",,"0","12800","0","-9218868437227405312","96835","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9788","DESKTOP-8O0G16U",,"08/Aug/2019 12:33:27",,,"g:\temp\noaccessrightstrytoreadsubhamoy.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File System","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"

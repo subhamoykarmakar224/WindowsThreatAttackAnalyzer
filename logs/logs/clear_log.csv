@@ -1,0 +1,246 @@
+#TYPE System.Diagnostics.Eventing.Reader.EventLogRecord
+"Message","Id","Version","Qualifiers","Level","Task","Opcode","Keywords","RecordId","ProviderName","ProviderId","LogName","ProcessId","ThreadId","MachineName","UserId","TimeCreated","ActivityId","RelatedActivityId","ContainerLog","MatchedQueryIds","Bookmark","LevelDisplayName","OpcodeDisplayName","TaskDisplayName","KeywordsDisplayNames","Properties"
+"A network share object was checked to see whether client can be granted desired access.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+	Relative Target Name:	Temp\full_data.evtx
+
+Access Request Information:
+	Access Mask:		0x12019F
+	Accesses:		READ_CONTROL
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				WriteData (or AddFile)
+				AppendData (or AddSubdirectory or CreatePipeInstance)
+				ReadEA
+				WriteEA
+				ReadAttributes
+				WriteAttributes
+				
+Access Check Results:
+	-
+","5145","0",,"0","12811","0","-9214364837600034816","124387","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9856","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Detailed File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was checked to see whether client can be granted desired access.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+	Relative Target Name:	Temp\full_data.evtx
+
+Access Request Information:
+	Access Mask:		0x2
+	Accesses:		WriteData (or AddFile)
+				
+Access Check Results:
+	-
+","5145","0",,"0","12811","0","-9214364837600034816","124386","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9568","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Detailed File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was checked to see whether client can be granted desired access.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+	Relative Target Name:	Temp\full_data.evtx
+
+Access Request Information:
+	Access Mask:		0x17019F
+	Accesses:		DELETE
+				READ_CONTROL
+				WRITE_DAC
+				SYNCHRONIZE
+				ReadData (or ListDirectory)
+				WriteData (or AddFile)
+				AppendData (or AddSubdirectory or CreatePipeInstance)
+				ReadEA
+				WriteEA
+				ReadAttributes
+				WriteAttributes
+				
+Access Check Results:
+	-
+","5145","0",,"0","12811","0","-9214364837600034816","124385","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9568","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Detailed File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was checked to see whether client can be granted desired access.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+	Relative Target Name:	Temp\full_data.evtx
+
+Access Request Information:
+	Access Mask:		0x20
+	Accesses:		Execute/Traverse
+				
+Access Check Results:
+	-
+","5145","0",,"0","12811","0","-9214364837600034816","124384","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9568","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Detailed File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was checked to see whether client can be granted desired access.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+	Relative Target Name:	Temp\full_data.evtx
+
+Access Request Information:
+	Access Mask:		0x80
+	Accesses:		ReadAttributes
+				
+Access Check Results:
+	-
+","5145","0",,"0","12811","0","-9214364837600034816","124383","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9568","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Detailed File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was accessed.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\G$
+	Share Path:		\??\G:\
+
+Access Request Information:
+	Access Mask:		0x1
+	Accesses:		ReadData (or ListDirectory)
+				
+","5140","1",,"0","12808","0","-9214364837600034816","124382","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","9568","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"A network share object was accessed.
+	
+Subject:
+	Security ID:		S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:		Dr. Chinmoy Karmakar
+	Account Domain:		DESKTOP-8O0G16U
+	Logon ID:		0xAB068B
+
+Network Information:	
+	Object Type:		File
+	Source Address:		::1
+	Source Port:		58829
+	
+Share Information:
+	Share Name:		\\*\IPC$
+	Share Path:		
+
+Access Request Information:
+	Access Mask:		0x1
+	Accesses:		ReadData (or ListDirectory)
+				
+","5140","1",,"0","12808","0","-9214364837600034816","124381","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","4428","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","File Share","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The Windows Filtering Platform has permitted a connection.
+
+Application Information:
+	Process ID:		4
+	Application Name:	System
+
+Network Information:
+	Direction:		Inbound
+	Source Address:		::1
+	Source Port:		445
+	Destination Address:	::1
+	Destination Port:		58829
+	Protocol:		6
+
+Filter Information:
+	Filter Run-Time ID:	236592
+	Layer Name:		Receive/Accept
+	Layer Run-Time ID:	46","5156","1",,"0","12810","0","-9214364837600034816","124380","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","4428","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Filtering Platform Connection","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The Windows Filtering Platform has permitted a connection.
+
+Application Information:
+	Process ID:		4
+	Application Name:	System
+
+Network Information:
+	Direction:		Outbound
+	Source Address:		::1
+	Source Port:		58829
+	Destination Address:	::1
+	Destination Port:		445
+	Protocol:		6
+
+Filter Information:
+	Filter Run-Time ID:	237858
+	Layer Name:		Connect
+	Layer Run-Time ID:	50","5156","1",,"0","12810","0","-9214364837600034816","124379","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","4428","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Filtering Platform Connection","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The Windows Filtering Platform has permitted a bind to a local port.
+
+Application Information:
+	Process ID:		4
+	Application Name:	System
+
+Network Information:
+	Source Address:		::
+	Source Port:		58829
+	Protocol:		6
+
+Filter Information:
+	Filter Run-Time ID:	237876
+	Layer Name:		Resource Assignment
+	Layer Run-Time ID:	38","5158","0",,"0","12810","0","-9214364837600034816","124378","Microsoft-Windows-Security-Auditing","54849625-5478-4994-a5ba-3e3b0328c30d","Security","4","4428","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Filtering Platform Connection","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The audit log was cleared.
+Subject:
+	Security ID:	S-1-5-21-3497878331-16137086-3393786485-1001
+	Account Name:	Dr. Chinmoy Karmakar
+	Domain Name:	DESKTOP-8O0G16U
+	Logon ID:	0xAB068B","1102","0",,"4","104","0","4620693217682128896","124377","Microsoft-Windows-Eventlog","fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148","Security","1308","1436","DESKTOP-8O0G16U",,"08/Aug/2019 23:47:11",,,"g:\temp\clearlog.evtx","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info","Log clear","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"

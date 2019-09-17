@@ -1,5 +1,25 @@
 from pymongo import MongoClient
+import bson
 import datetime
+
+def demo(Id):
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_store"]
+    data = list(
+        tableLogStore.find({'Id': Id}).limit(1)
+    )
+    return data
+
+def getAllLogs(storeName): # 7556 all log count, Store: "wintest"
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_store"]
+    data = list(
+        tableLogStore.find({'Store': storeName}).sort('TimeCreated', 1)
+    )
+    return data
+    
 
 
 def getUniqueStoreName():
@@ -22,6 +42,7 @@ def getLogDate(storeName):
 def getLogDataUsingQuery(storeName, field, values):
     con = MongoClient("mongodb://localhost:27017/")
     db = con["logs"]
+    print(storeName, field, values)
     tableLogStore = db["log_store"]
     cur = tableLogStore.find({
         'Store': str(storeName),
@@ -36,7 +57,7 @@ def checkCompleteSessionStatus(storeName, sesId):
     db = con["logs"]
     tableLogStore = db["log_store"]
     data = list(tableLogStore.find({'Store': storeName, 'Id': {'$in': [4624, 4647]}, 'Message': {'$regex': sesIds}}).sort('TimeCreated', 1))
-    if data[0]['Id'] == 4624 and data[1]['Id'] == 4647:
+    if data[0]['Id'] == "4624" and data[1]['Id'] == "4647":
         return True
     return False
 
@@ -46,7 +67,7 @@ def getLogsForAnalyze(storeName, sesId, eventIds):
     tableLogStore = db["log_store"]
     cur = list(tableLogStore.find({
         'Store': storeName,
-        'Id': {'$in': [4624, 4647]},
+        'Id': {'$in': ["4624", "4647"]},
         'Message': {'$regex': sesId}
     }).sort('TimeCreated', 1))
 
@@ -62,10 +83,11 @@ def getLogsForAnalyze(storeName, sesId, eventIds):
     return cur
 
 
-def insertReport(log, status, reportId, reportMsg):
+def insertReport(log, status, reportId, reportMsg, forensic):
     con = MongoClient("mongodb://localhost:27017/")
     db = con["logs"]
     tableLogStore = db["log_analyze_report"]
+
     cur = tableLogStore.insert_one({
         'log_id': log['_id'],
         'attack_status': status,
@@ -98,7 +120,13 @@ def insertReport(log, status, reportId, reportMsg):
         'TaskDisplayName': log['TaskDisplayName'],
         'KeywordsDisplayNames': log['KeywordsDisplayNames'],
         'Properties': log['Properties'],
-        'Store': log['Store']
+        'Store': log['Store'],
+        'who': forensic['who'],
+        'fromwhere': forensic['fromwhere'],
+        'when': forensic['when'],
+        'what': forensic['what'],
+        'how': forensic['how'],
+        'why': forensic['why']
     })
     return cur
 
@@ -115,9 +143,51 @@ def getKnownLogIds(reportId):
 
     return logIds
 
+def getFailedObjectAccessLogs(storeName):
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_store"]
+    cur = tableLogStore.find({'Store': storeName, "Id": "4656", "Keywords": bson.int64.Int64(-9218868437227405312)}).sort('TimeCreated', -1)
+    return list(cur)
+
+
+def getSuccessObjectAccessLogs(storeName):
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_store"]
+    cur = tableLogStore.find({'Store': storeName, "Id": "4656", "Keywords": bson.int64.Int64(-9214364837600034816)}).sort('TimeCreated', -1)
+    return list(cur)
+
+
+def getPrintLogs(storeName):
+    con = MongoClient("mongodb://localhost:27017/")
+    db = con["logs"]
+    tableLogStore = db["log_store"]
+    cur = tableLogStore.find({'Store': storeName, "Id": "307"}).sort('TimeCreated', -1)
+    return list(cur)
+
+# def DEMO():
+#     con = MongoClient("mongodb://localhost:27017/")
+#     db = con["logs"]
+#     tableLogStore = db["log_store"]
+#     storeName = 'wintest'
+#     field = 'Id'
+#     values = ['1102']
+#     cur = tableLogStore.find({
+#         'Store': str(storeName),
+#         field : {'$in': values}
+#     }).sort('TimeCreated', 1)
+#     logonIDs = []
+#     for c in cur:
+#         print(list(c))
+
 
 # if __name__ == '__main__':
-#     print(getUnknownLogIds('home-log', getKnownLogIds('home-log_2019-08-07_16:45:59.625541_0x1E6C1F95')))
+#     DEMO()
+#     res = (getPrintLogs('home-log-01'))
+#     for r in res:
+#         print(r['Message'])
+    # print(getFailedAccessLogs('home-log', getKnownLogIds('home-log_2019-08-07_16:45:59.625541_0x1E6C1F95')))
 
 
 

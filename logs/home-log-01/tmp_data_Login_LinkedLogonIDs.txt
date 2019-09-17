@@ -1,0 +1,9 @@
+Logon ID: 0x78B8C68
+Linked Logon ID: 0x78B8C4B
+-------------------------------------------
+New Logon:
+Security ID: S-1-5-21-1874035555-1170827713-1978778435-1001
+Account Name:	 DEBASHISH
+Account Domain: DESKTOP-0526O8D
+Logon ID: 0x78B8C68
+Linked Logon ID: 0x78B8C4B
